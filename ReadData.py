@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 # author: AlisaAlbert
-# 2019/05/19 2019/5/19 11:25
+# 2019/5/19 11:25
 
 import pickle
 import pymysql
