@@ -43,8 +43,8 @@ def read_data(db_connect, target_table, code):
 
 if __name__ == "__main__":
     # 开启的进程数, 与逻辑核保持一致即可，普通台式机建议18，高性能工作站建议60
-    target_table = 'dim_transit_distance_info'
-    division_table = 'hub_code_division'
+    target_table = 'table_name1'
+    division_table = 'table_name2'
     db_connect = connect_db()
     city_list = get_division_list(db_connect, division_table)
 
