@@ -34,7 +34,7 @@ def get_division_list(db_connect, division_table):
 #单进程读取目标表
 def read_data(db_connect, target_table, code):
     start = time.time()
-    sql = 'select * from {0} where src_zone_code in ({1});'.format(target_table,"'" + "','".join(code) + "'")
+    sql = 'select * from {0} where city_code in ({1});'.format(target_table,"'" + "','".join(code) + "'")
     data_df = pd.read_sql(sql,con = db_connect)
     print('数据读入成功！')
     end = time.time()
